@@ -107,38 +107,38 @@
         <h1 class="title">Poznajcie nas bliżej</h1>
         <main class="aboutus-main">
             <article class="person">
-                <div class="custom-photo"><img src="images/IMG_1039.JPG" alt="Dr inż. Zbigniew Pilch"></div>
+                <div class="custom-photo photo-left"><img src="images/IMG_1039.JPG" alt="Dr inż. Zbigniew Pilch"></div>
                 <div class="person-info">
                     <h3 class="name">Dr inż. Zbigniew Pilch</h3>
-                    <p class="person-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse odio dolorem earum. Dignissimos magni illum, non laudantium saepe accusantium? Debitis, corrupti eveniet. Quaerat recusandae eum placeat aut doloremque et, quasi sequi! Delectus, tenetur quaerat pariatur earum dolores a quod? Dignissimos eligendi voluptates pariatur explicabo animi atque praesentium harum, quas dolores.</p>
+                    <p class="person-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo incidunt inventore, commodi hic voluptate ullam blanditiis nam recusandae, quis natus consectetur aliquam qui. Blanditiis inventore perferendis eligendi minus atque placeat beatae porro sed enim quibusdam, consectetur fuga fugiat? Cupiditate quae impedit nihil aliquid perferendis nobis molestiae deleniti necessitatibus repudiandae quibusdam.</p>
                 </div>
             </article>
             <article class="person">
-                <div class="custom-photo"><img src="images/IMG_1059.JPG" alt="Mgr inż. Maciej Gibas"></div>
+                <div class="custom-photo photo-right"><img src="images/IMG_1059.JPG" alt="Mgr inż. Maciej Gibas"></div>
                 <div class="person-info person-info-right">
                     <h3 class="name">Mgr inż. Maciej Gibas</h3>
                     <p class="person-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque pariatur distinctio rerum consequatur natus blanditiis et! Officiis, ad necessitatibus voluptate quaerat possimus ex explicabo illo aperiam quidem placeat sequi, nihil dolores eveniet enim corrupti vero eius labore corporis repellat. Ab repudiandae aperiam ducimus beatae minima! Ut harum eveniet ad commodi!</p>
                 </div>
             </article>
             <article class="person">
-                <div class="custom-photo"><img src="images/IMG_0636.JPG" alt="inż. Mateusz Pyznar"></div>
+                <div class="custom-photo photo-left"><img src="images/IMG_0636.JPG" alt="inż. Mateusz Pyznar"></div>
                 <div class="person-info">
                     <h3 class="name">inż. Mateusz Pyznar</h3>
                     <p class="person-description">W firmie New Prompt zajmuje się aspektami technicznymi oraz realizacją zamówień wydruków 3D. Wykorzystuje moje zainteresowania związane z elektroniką oraz prototypowaniem w technologiach przyrostowych aby dbać o ciągłą gotowość do pracy naszych urządzeń.  Podczas realizacji zamówień darze do uzyskania jak najlepszych parametrów wytrzymałościowych oraz jakościowych w zależności od potrzeb zamawiającego przy zachowaniu jak najkorzystniejszej ceny dla odbiorcy końcowego. </p>
                 </div>
             </article>
             <article class="person">
-                <div class="custom-photo"><img src="images/IMG_0640.JPG" alt="inż. Łukasz Bolanowski"></div>
+                <div class="custom-photo photo-right"><img src="images/IMG_0640.JPG" alt="inż. Łukasz Bolanowski"></div>
                 <div class="person-info person-info-right">
                     <h3 class="name">inż. Łukasz Bolanowski</h3>
                     <p class="person-description">Jestem studentem I semestru studiów magisterskich kierunku Infotronika na Wydziale Inżynierii Elektrycznej i Komputerowej Politechniki Krakowskiej im. Tadeusza Kościuszki. Potrafię połączyć wywiązywanie się z obowiązków związanych ze studiami z innymi formami aktywności na uczelni - działam w Kole Naukowym oraz w Samorządzie Studenckim, przez co nauczyłem się efektywnie zarządzać swoim czasem. W firmie zajmuję się promocją oraz marketingiem, a także projektowaniem modeli do druku 3D.</p>
                 </div>
             </article>
             <article class="person">
-                <div class="custom-photo"><img src="" alt="inż. Kamila Stańczyk"></div>
+                <div class="custom-photo photo-left"><img src="" alt="inż. Kamila Stańczyk"></div>
                 <div class="person-info">
                     <h3 class="name">inż. Kamila Stańczyk</h3>
-                    <p class="person-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat iste voluptatibus cupiditate molestias, quam aperiam? Quibusdam, nemo aliquid excepturi maiores error cupiditate iste at maxime eum, molestiae odit id fugit exercitationem sapiente? Tempore nobis ratione tenetur veniam cum minima dolorem maxime error sint debitis tempora delectus, sunt molestiae rerum magni.</p>
+                    <p class="person-description">Swoje doświadczenie zdobywam biorąc udział w różnych projektach związanych z drukiem 3D. Zawodowo zajmuje się projektowaniem symboli elektrycznych. Na codzień pełnię funkcję przewodniczącej koła naukowego el-RAPPRO przez co wiem jak skutecznie zajmować się zespołem. Jestem studentem kierunku Infotronika. W wolnych chwilach swój czas poświęcam tematom związanym z AI, psychologiom a także ekonomiom. Do moich zadań należy kontakt z klientem i efektywne dopasowanie jego potrzeb do naszej oferty.</p>
                 </div>
             </article>
         </main>
@@ -147,6 +147,7 @@
         <h1 class="title">Skontaktuj się z nami</h1>
         <div class="formsocials">
             <form class="form-box" action="https://formsubmit.co/newprompt.official@gmail.com" enctype="multipart/form-data" method="POST">
+                <h3 class="form-info">Przesyłanie modeli do druku, wycena</h3>
                 <input name="_captcha" type="hidden"value="false">
                 <input type="hidden" name="_subject" value="Wycena wydruku">
                 <input name="firstName" type="name"placeholder="Twoje imię" required>
@@ -156,25 +157,36 @@
                 <textarea name="textContent" placeholder="Napisz wiadomość"></textarea>
                 <button class="submitform" type="submit">Wyślij</button>
             </form>
-            <article class="socials">
-                <h2>Media społecznościowe</h2>
-                <div class="facebook">
-                    <img src="images/facebook.png" alt="Logo facebooka">
-                    <p class="page">Strona na Facebooku</p>
-                </div>
-                <div class="twitter">
-                    <img src="images/twitter.png" alt="Logo Twittera">
-                    <p class="page">Konto na Twitterze</p>
-                </div>
-                <div class="linkedin">
-                    <img src="images/linkedin.png" alt="Logo LinkedIn">
-                    <p class="page">Profil na LinkedIn</p>
-                </div>
-                <div class="email">
-                    <p class="page">Napisz do nas na newprompt.official@gmail.com</p>
-                </div>
-            </article>
+            <span class="separation"></span>
+            <form class="form-box" action="https://formsubmit.co/newprompt.official@gmail.com" enctype="multipart/form-data" method="POST">
+                <h3 class="form-info">Konsultacje techniczne, doradztwo projektowe</h3>
+                <input name="_captcha" type="hidden"value="false">
+                <input type="hidden" name="_subject" value="Konsultacje techniczne">
+                <input name="firstName" type="name"placeholder="Twoje imię" required>
+                <input name="surname" type="text"placeholder="Twoje nazwisko" required>
+                <input name="email" type="email"placeholder="Twój adres E-mail" required>
+                <textarea name="textContent" placeholder="Napisz wiadomość"></textarea>
+                <button class="submitform" type="submit">Wyślij</button>
+            </form>
         </div>
+        <article class="socials">
+            <h2>Media społecznościowe</h2>
+            <div class="facebook">
+                <img src="images/facebook.png" alt="Logo facebooka">
+                <p class="page">Strona na Facebooku</p>
+            </div>
+            <div class="twitter">
+                <img src="images/twitter.png" alt="Logo Twittera">
+                <p class="page">Konto na Twitterze</p>
+            </div>
+            <div class="linkedin">
+                <img src="images/linkedin.png" alt="Logo LinkedIn">
+                <p class="page">Profil na LinkedIn</p>
+            </div>
+            <div class="email">
+                <p class="page">Napisz do nas na newprompt.official@gmail.com</p>
+            </div>
+        </article>
     </section>
     <footer>
         &copy; <p>NewPrompt - wszelkie prawa zastrzeżone</p>
