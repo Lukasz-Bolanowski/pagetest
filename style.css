@@ -223,6 +223,7 @@ nav.desktop {
 .title {
     font-size: clamp(3rem, 6vw, 4.5rem);
     text-align: center;
+    text-transform: uppercase;
 }
 
 .specialization {
@@ -267,7 +268,7 @@ nav.desktop {
 }
 
 .boxes_item {
-    margin: 25px;
+    margin: 25px auto;
     padding: 10px 10px 20px 10px;
     border-radius: 10px;
     background-color: #fff;
@@ -322,7 +323,7 @@ nav.desktop {
 /*Galeria CSS grid*/
 
 .gallery {
-    margin-top: 35px;
+    padding: 15px;
 }
 
 .gallery-title {
@@ -553,7 +554,7 @@ nav.desktop {
 }
 
 .form-info {
-    font-size: clamp(1.5rem, 1.5vw, 1.8rem);
+    font-size: clamp(1.5rem, 2vw, 2.2rem);
     text-align: center;
 }
 
@@ -580,13 +581,23 @@ textarea {
     border: none;
 }
 
-.socials {
-    margin: 15px;
+.socialmedia {
+    font-size: clamp(1.5rem, 2vw, 2.2rem);
+    text-align: center;
 }
 
-.facebook, .twitter, .linkedin {
+.socials {
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.facebook, .instagram, .linkedin {
     margin: 15px 0;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -595,12 +606,17 @@ textarea {
     font-size: 1.4rem;
 }
 
-.separation {
-    display: block;
-    width: 90%;
-    height: 5px;
-    background-image: linear-gradient(to right, #4154f5, #9e47e5);
-    margin: 0 auto;
+.facebookimg, .instagramimg {
+    width: 15%;
+}
+
+.linkedinimg {
+    width: 15%;
+}
+
+.email {
+    text-align: center;
+    font-size: clamp(1.5rem, 1.5vw, 1.8rem);
 }
 
 @media (min-width: 1024px) {
@@ -618,7 +634,7 @@ textarea {
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
+        flex-direction: row;
         margin: 0 auto;
     }
 
@@ -634,9 +650,21 @@ textarea {
     .separation {
         display: none;
     }
+
+    .facebookimg {
+        width: 40%;
+    }
+    
+    .linkedinimg {
+        width: 110%;
+    }
 }
 
 footer {
     height: 20vh;
     background-color: #e5daed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
