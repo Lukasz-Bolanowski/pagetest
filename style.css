@@ -175,6 +175,14 @@ nav.desktop {
     }
 }
 
+.intro, .ai-zone, .printing-zone, .gallery, .about-us, .contact {
+    padding: 15px;
+}
+
+.about-us {
+    padding-bottom: 30px;
+}
+
 .hero {
     min-height: 100vh;
     overflow: hidden;
@@ -214,7 +222,6 @@ nav.desktop {
 }
 
 .intro {
-    padding: 10px;
     text-align: center;
     width: 80%;
     margin: 0 auto;
@@ -224,6 +231,10 @@ nav.desktop {
     font-size: clamp(3rem, 6vw, 4.5rem);
     text-align: center;
     text-transform: uppercase;
+    background-image: linear-gradient(to right, #4154f5, #9e47e5);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .specialization {
@@ -232,7 +243,7 @@ nav.desktop {
     margin-top: 4vh;
 }
 
-.title, .specialization {
+.specialization {
     color: #4154f5;
 }
 
@@ -240,9 +251,6 @@ nav.desktop {
     font-size: clamp(1.5rem, 1.5vw, 1.8rem);
 }
 
-.title, .description {
-    margin-top: 15px;
-}
 
 .ai-zone, .printing-zone {
     display: flex;
@@ -269,7 +277,7 @@ nav.desktop {
 
 .boxes_item {
     margin: 25px auto;
-    padding: 10px 10px 20px 10px;
+    padding: 15px;
     border-radius: 10px;
     background-color: #fff;
     width: 90%;
@@ -359,7 +367,6 @@ nav.desktop {
 .photo_four::before, .photo_five::before, .photo_six::before {
     position: absolute;
     background-color: rgba(23, 23, 23, 0.5);
-    padding: 8px;
     text-align: center;
     color: #fff;
     font-size: 2rem;
@@ -373,7 +380,7 @@ nav.desktop {
 }
 
 .photo_one::before {
-    content: 'Druk mechanizmów z możliwością montaażu innych elementów';
+    content: 'Druk mechanizmów z możliwością montażu innych elementów';
 }
 
 .photo_two {
@@ -405,7 +412,7 @@ nav.desktop {
 }
 
 .photo_five::before {
-    content: 'Praca w laboratorium';
+    content: 'Sitko do osuszania wydruków żywicznych';
 }
 
 .photo_six {
@@ -413,7 +420,7 @@ nav.desktop {
 }
 
 .photo_six::before {
-    content: 'Proces wydruku zaprojektowanego elementu';
+    content: 'Projektowanie i druk gadżetów';
 }
 
 @media (min-width: 768px) {
@@ -441,6 +448,7 @@ nav.desktop {
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 0;
         transition: .3s ease;
     }
 
@@ -461,7 +469,7 @@ nav.desktop {
 }
 
 .person {
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .person:first-child {
@@ -491,8 +499,9 @@ nav.desktop {
     flex-direction: column;
 }
 
-.name {
+.name, .form-info, .socialmedia {
     font-size: clamp(2rem, 3.7vw, 2.7rem);
+    color: #4154f5;
 }
 
 .person-description {
