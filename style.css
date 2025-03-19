@@ -344,7 +344,9 @@ nav.desktop {
     display: grid;
     grid-gap: 10px;
     padding: 10px;
+    border-radius: 30px;
     overflow: hidden;
+    border: 2px solid #4154f5;
     grid-template-areas:
     "one"
     "two"
@@ -352,6 +354,10 @@ nav.desktop {
     "four"
     "five"
     "six";
+}
+
+.photo {
+    border-radius: 25px;
 }
 
 .photo img {
@@ -466,7 +472,6 @@ nav.desktop {
     flex-direction: column;
     width: 90%;
     margin: 0 auto;
-    overflow: hidden;
 }
 
 .person {
@@ -493,7 +498,6 @@ nav.desktop {
 
 .person-info {
     text-align: center;
-    margin-top: 15px;
 }
 
 .name, .form-info, .socialmedia {
@@ -537,6 +541,10 @@ nav.desktop {
     .person-info {
         text-align: left;
         grid-column: 2/5;
+        display: flex;
+        justify-content: center;
+        align-items: left;
+        flex-direction: column;
     }
 
     .person-info-right {
@@ -601,30 +609,25 @@ textarea {
 
 .socials {
     margin: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
 .facebook, .instagram, .linkedin {
     margin: 15px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    width: fit-content;
 }
 
 .page {
-    margin-left: 10px;
     font-size: 1.4rem;
 }
 
-.facebookimg, .instagramimg {
+.facebookimg, .instagramimg, .linkedinimg {
     width: 15%;
 }
 
-.linkedinimg {
-    width: 15%;
+.socialLink {
+    text-decoration: none;
+    color: #000;
 }
 
 .email {
@@ -664,12 +667,12 @@ textarea {
         display: none;
     }
 
-    .facebookimg {
-        width: 40%;
+    .facebookimg, .instagramimg {
+        width: 30%;
     }
-    
+
     .linkedinimg {
-        width: 110%;
+        width: 40%;
     }
 }
 
