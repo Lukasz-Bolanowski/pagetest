@@ -231,6 +231,7 @@ nav.desktop {
     font-size: clamp(3rem, 6vw, 4.5rem);
     text-align: center;
     text-transform: uppercase;
+    padding-bottom: 15px;
     background-image: linear-gradient(to right, #4154f5, #9e47e5);
     background-clip: text;
     -webkit-background-clip: text;
@@ -265,7 +266,6 @@ nav.desktop {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 10px;
 }
 
 .specjalizations {
@@ -301,7 +301,7 @@ nav.desktop {
 
 @media (min-width: 1024px) {
     .boxes {
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
         flex-direction: row;
     }
@@ -466,6 +466,7 @@ nav.desktop {
     flex-direction: column;
     width: 90%;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .person {
@@ -493,10 +494,6 @@ nav.desktop {
 .person-info {
     text-align: center;
     margin-top: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: left;
-    flex-direction: column;
 }
 
 .name, .form-info, .socialmedia {
@@ -508,6 +505,12 @@ nav.desktop {
     font-size: clamp(1.5rem, 1.5vw, 1.8rem);
 }
 
+@media (min-width: 768px) {
+    .custom-photo img {
+        width: 45%;
+    }
+}
+
 @media (min-width: 1024px) {
     .aboutus-main {
         width: 80%;
@@ -516,7 +519,7 @@ nav.desktop {
 
     .person {
         display: grid;
-        grid-template-columns: repeat(4, minmax(230px, 1fr));
+        grid-template-columns: repeat(4, minmax(150px, 1fr));
     }
 
     .photo-left {
@@ -580,6 +583,7 @@ input, textarea {
 textarea {
     height: 100px;
     resize: none;
+    font-family: 'Open-Sans', sans-serif;
 }
 
 .submitform {
