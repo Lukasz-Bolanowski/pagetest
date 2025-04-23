@@ -187,6 +187,13 @@ nav.desktop {
     background-size: cover;
 }
 
+.plyr {
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+  }
+
 .header-image {
     text-align: center;
     height: 100vh;
@@ -199,7 +206,6 @@ nav.desktop {
     background-size: 400px;
     background-repeat: no-repeat;
     background-position: 50% 65%;
-
 }
 
 .page-title {
@@ -673,8 +679,4 @@ textarea {
 footer {
     height: 20vh;
     background-color: #e5daed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
