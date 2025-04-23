@@ -2,207 +2,101 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Strona internetowa firmy NewPrompt">
-    <meta name="keywords" content="Druk 3D, AI, Fotogrametria, Szkolenia Autodesk">
-    <meta name="author" content="Łukasz Bolanowski">
+    <title>Portfolio page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="icon" href="images/LogoPNGWBG.png" type="image/x-icon">
-    <title>NewPrompt - AI, 3D printing and more</title>
 </head>
 <body>
-    <header class="hero" id="header">
+    <header class="hero" id="head">
         <button class="hamburger">
             <span class="hamburger__container">
                 <span class="hamburger__bars"></span>
             </span>
         </button>
         <aside>
-            <a href="#header"><span class="logo"><img src="images/LogoPNG.png" class="logo-mobile" alt="NewPrompt" decoding="async"></span></a>
-            <nav class="mobile">
-                <ul>
-                    <li class="menu__item"><a data-id="item" href="#header">Strona główna</a></li>
-                    <li class="menu__item"><a data-id="item" href="#section-aizone">Strefa AI</a></li>
-                    <li class="menu__item"><a data-id="item" href="#section-printingzone">Usługi druku 3D</a></li>
-                    <li class="menu__item"><a data-id="item" href="#section-gallery">Galeria zdjęć</a></li>
-                    <li class="menu__item"><a data-id="item" href="#section-aboutus">O nas</a></li>
-                    <li class="menu__item"><a data-id="item" href="#section-contact">Kontakt</a></li>
-                </ul>
-            </nav>
-        </aside>
-        <nav class="desktop">
-            <a href="#header"><span class="logo"></span><img src="images/LogoPNG.png" class="logo-desktop" alt="NewPrompt" decoding="async"></span></a>
+        <nav class="mobile">
             <ul class="menu">
-                <li class="menu__item"><a data-id="item" href="#header">Strona główna</a></li>
-                <li class="menu__item"><a data-id="item" href="#section-aizone">Strefa AI</a></li>
-                <li class="menu__item"><a data-id="item" href="#section-printingzone">Usługi druku 3D</a></li>
-                <li class="menu__item"><a data-id="item" href="#section-gallery">Galeria zdjęć</a></li>
-                <li class="menu__item"><a data-id="item" href="#section-aboutus">O nas</a></li>
-                <li class="menu__item"><a data-id="item" href="#section-contact">Kontakt</a></li>
+                <li class="mobile__item"><a href="#head">home</a></li>
+                <li class="mobile__item"><a href="#first">services</a></li>
+                <li class="mobile__item"><a href="#second">projects</a></li>
+                <li class="mobile__item"><a href="#">about</a></li>
+                <li class="mobile__item"><a href="#">contact</a></li>
             </ul>
         </nav>
-        <section class="header-image">
-            <video
-            autoplay
-            muted
-            loop
-            playsinline>
-            <source src="images/headerFilm.mp4" type="video/mp4" />
-          </video>
-        </section>
+        </aside>
+        <nav class="desktop">
+            <span id="marker"></span>
+            <ul class="menu">
+                <li class="desktop__item"><a href="#head">home</a></li>
+                <li class="desktop__item"><a href="#first">services</a></li>
+                <li class="desktop__item"><a href="#second">projects</a></li>
+                <li class="desktop__item"><a href="#">about</a></li>
+                <li class="desktop__item"><a href="#">contact</a></li>
+        </nav>
+
+        <h1 class="title">Hello! My name is <span>Janet</span></h1>
+        <button class="anchor"><a href="#first">Portfolio</a></button>
     </header>
-    <section class="intro" id="section-intro">
-        <h1 class="title">Witamy w NewPrompt - Twoim partnerze w nowoczesnych technologiach</h1>
-        <p class="description">NewPrompt to innowacyjna spółka z ograniczoną odpowiedzialnością, powstała jako spin-off Politechniki Krakowskiej, której misją jest dostarczanie najwyższej jakości usług w obszarach nowoczesnych technologii. Nasza działalność opiera się na solidnych fundamentach wiedzy akademickiej oraz zdobywanym doświadczeniom, co pozwala nam oferować kompleksowe rozwiązania dostosowane do indywidualnych potrzeb klientów.</p>
-        <h2 class="specialization">Szkolenia z zakresu sztucznej inteligencji</h2>
-        <p class="description">Prowadzimy profesjonalne kursy na różnych poziomach zaawansowania – od podstawowych zagadnień, po specjalistyczne zastosowania AI w przemyśle, w biznesie oraz w sektorze edukacji. Nasze szkolenia łączą teoretyczne podstawy z praktycznymi ćwiczeniami, umożliwiając uczestnikom szybkie wdrożenie zdobytej wiedzy w realnych projektach.</p>
-        <h2 class="specialization">Druk 3D na zamówienie oraz sprzedaż wydrukowanych modeli</h2>
-        <p class="description">Korzystamy z nowoczesnych drukarek 3D, zapewniając dopasowanie sprzętu do potrzeb klienta. Oferujemy zarówno indywidualne zamówienia, jak i gotowe rozwiązania, które wyróżniają się precyzją wykonania oraz wysoką jakością.</p>
-        <h2 class="specialization">Certyfikowane szkolenia z AutoCad oraz Fusion 360</h2>
-        <p class="description">Dzięki naszym kursom zdobędziesz umiejętności niezbędne do efektywnego projektowania i modelowania 3D. Programy szkoleniowe opracowane są we współpracy z ekspertami branżowymi, co gwarantuje aktualność i praktyczność przekazywanych treści.</p>
-        <p class="description">W NewPrompt wierzymy, że rozwój technologiczny oraz ciągłe doskonalenie kompetencji są kluczowe dla osiągnięcia sukcesu w dynamicznie zmieniającym się środowisku biznesowym. Nasze podejście opiera się na indywidualnej współpracy z klientem, co pozwala nam tworzyć spersonalizowane rozwiązania, które owocują sukces na rynku.Zapraszamy do współpracy z nami – razem możemy wykorzystać potencjał innowacyjnych technologii do osiągania satysfakcjonujących rezultatów.</p>
-    </section>
-    <section class="ai-zone" id="section-aizone">
-        <h1 class="title">Szkolenia z zakresu sztucznej inteligencji</h1>
-        <main class="boxes">        
-            <article class="boxes_item">
-                <h2 class="boxes_item-title">Chat GPT</h2>
-                <p class="boxes_item-description">ChatGPT to zaawansowany model językowy opracowany przez OpenAI, który umożliwia automatyzację komunikacji, analizę tekstu oraz generowanie treści na potrzeby biznesu, edukacji i marketingu. Jego wszechstronność sprawia, że jest niezastąpiony w takich zadaniach jak tworzenie treści reklamowych, optymalizacja procesów obsługi klienta czy wsparcie w programowaniu. Na naszym szkoleniu dowiesz się jak skutecznie formułować zapytanie (prompty), aby uzyskiwać precyzyjne odpowiedzi. Dowiesz się także, jak wykorzystać ChatGPT w automatyzacji pracy, generowaniu wartościowych treści oraz jak integrować model z Twoimi narzędziemi biznesowymi.<br><br>Rozwijaj swoje kompetencje i odkryj, jak AI może zwiększyć Twoją efektywność.
-            </article>
-            <article class="boxes_item">
-                <h2 class="boxes_item-title">Claude</h2>
-                <p class="boxes_item-description">Claude, rozwijany przez Anthropic, to model językowy zaprojektowany z myślą o precyzji, etyce i bezpieczeństwie. Jest doskonałym wyborem dla firm i instytucji wymagających analizy dużych zbiorów danych, generowania treści o wysokiej jakości oraz wspierania procesów decyzyjnych. W ramach szkolenia dowiesz się, jak wykorzystywać Claude'a do analizy dokumentów i raportów, jak korzystać z jego zaawansowanych możliwości w zakresie precyzyjnego wyszukiwania informacji oraz jak wdrożyć go do swojej organizacji w sposób efektywny i zgodny z etyką AI.<br><br>Zainwestuj w rozwiązanie, które podniesie standardy pracy w atwojej firmie.
-            </article>
-            <article class="boxes_item">
-                <h2 class="boxes_item-title">Inne modele językowe</h2>
-                <p class="boxes_item-description">Inne modele językowe (Gemini, Perplexity i inne)
-                    Oprócz ChatGPT i Claude istnieją także inne modele AI, które sprawdzają się w różnych zastosowaniach. Google Gemini wyróżnia się zdolnością przetwarzania wielu formatów danych (tekst, obraz, kod), a Perplexity AI specjalizuje się w zaawansowanym wyszukiwaniu informacji i analizie kontekstowej. Na szkoleniu dowiesz się, który model najlepiej pasuje do Twojego biznesu lub branży, jak efektywnie korzystać z różnych zarzędzi AI w zależności od potrzeb oraz jak łączyć możliwości wielu modeli tak, aby uzyskać jak najlepsze rezultaty. <br><br>Nie ograniczaj się do jednego rozwiązania - poznaj szerokie spektrum możliwości sztucznej inteligencji.
-            </article>
-        </main>
-    </section>
-    <section class="printing-zone" id="section-printingzone">
-        <h1 class="title">Druk 3D i doradztwo projektowe</h1>
-        <main class="boxes">        
-            <article class="boxes_item">
-                <h2 class="boxes_item-title">Wydruki na zamówienie</h2>
-                <p class="boxes_item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dignissimos autem magnam asperiores fuga blanditiis laborum, commodi reiciendis explicabo deleniti suscipit voluptatum nemo exercitationem aliquam porro pariatur? Deleniti fugit impedit sint delectus obcaecati tempora adipisci labore inventore beatae illo tempore iusto ad ut, earum nesciunt cum optio modi architecto corporis ducimus? Blanditiis ipsam modi mollitia molestiae vitae at unde laboriosam?</p>
-            </article>
-            <article class="boxes_item">
-                <h2 class="boxes_item-title">Sprzedaż gotowych wydruków</h2>
-                <p class="boxes_item-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi perferendis rerum sunt. Natus quod accusantium rerum officia deleniti eaque animi at, minima facilis, suscipit libero dicta? Debitis, magni corporis? Consequatur voluptatum necessitatibus quae sed incidunt. Alias dolorum libero cupiditate a quisquam. Asperiores molestias esse atque doloremque quas quidem quasi. Delectus dolores nisi amet sint inventore soluta impedit laboriosam exercitationem ad.</p>
-            </article>
-            <article class="boxes_item">
-                <h2 class="boxes_item-title">Doradztwo projektowe</h2>
-                <p class="boxes_item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates eos quis quam beatae exercitationem a velit, aspernatur ratione ducimus nam culpa nemo eveniet sapiente sit tenetur, earum rerum enim. Non magni necessitatibus numquam impedit, quas eligendi. Similique commodi doloribus minus obcaecati, ipsa omnis culpa est quia id consequuntur exercitationem rerum, asperiores ullam et, iste molestias temporibus fugiat! Ut, velit doloribus.</p>
-            </article>
-        </main>
-    </section>
-    <section class="gallery" id="section-gallery">
-        <h1 class="title">Jak wyglądają nasze prace?</h1>
-        <div class="images">
-            <div class="photo photo_one"><img src="images/IMG_0612.JPG" alt="Model mechanizmu"></div>
-            <div class="photo photo_two"><img src="images/IMG_0704.JPG" alt="Postument zeskanowany metodą fotogrametrii"></div>
-            <div class="photo photo_three"><img src="images/IMG_0616.JPG" alt="Obudowa urządzenia"></div>
-            <div class="photo photo_four"><img src="images/IMG_0619.JPG" alt="Spersonalizowane ozdoby"></div>
-            <div class="photo photo_five"><img src="images/IMG_0648.JPG" alt="Praca w laboratorium"></div>
-            <div class="photo photo_six"><img src="images/IMG_0650.JPG" alt="Proces wydruku"></div>
+    <section class="services" id="first">
+        <div class="services-top">
+            <h2>Serv<span>i</span>ces</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui natus facilis reiciendis similique consequuntur nostrum fugiat, non illo, autem nihil alias saepe eum laborum quae atque, ducimus rerum vel cum! Nam animi mollitia, quisquam nostrum dolorem doloremque sit, voluptatum facere exercitationem, nisi itaque numquam. Sequi deleniti autem earum velit accusamus?</p>
         </div>
-    </section>
-    <section class="about-us" id="section-aboutus">
-        <h1 class="title">Poznajcie nas bliżej</h1>
-        <main class="aboutus-main">
-            <article class="person">
-                <div class="custom-photo photo-left"><img src="images/IMG_1059.JPG" alt="Dr inż. Zbigniew Pilch"></div>
-                <div class="person-info">
-                    <h3 class="name">Mgr inż. Maciej Gibas</h3>
-                    <p class="person-description">Jestem prezesem zarządu spółki NewPrompt sp. z o.o., ekspertem w dziedzinie sztucznej inteligencji, inżynierii elektrycznej i technologii cyfrowych. Jestem absolwentem kierunku Infotronika na Politechnice Krakowskiej, posiadam certyfikację PRINCE2 oraz ukończony kurs AI na Uniwersytecie Harvarda. Pełniąc funkcję Pełnomocnika Dziekana Wydziału Inżynierii Elektrycznej i Komputerowej w latach 2021 - 2024 zorganizowałem dwie międzynarodowe szkoły letnie poświęcone sztucznej inteligencji. Obecnie jako skaut technologiczny wydziału aktywnie łączę środowisko akademickie z przemysłem, skutecznie wdrażając innowacyjne rozwiązania. Byłem wielokrotnie nagradzany za działalność naukową oraz popularyzatorską.</p>
-                </div>
-            </article>
-            <article class="person">
-                <div class="custom-photo photo-right"><img src="images/IMG_1039.JPG" alt="Mgr inż. Maciej Gibas"></div>
-                <div class="person-info person-info-right">
-                    <h3 class="name">Dr inż. Zbigniew Pilch</h3>
-                    <p class="person-description">Jestem wiceprezesem zarządu spółki NewPrompt sp. z o.o., ekspertem w dziedzinie mechatroniki, cieczy magnetoreologicznych oraz komputerowych metod wspomagania w mechatronice. Pracuję jako adiunkt w Katedrze Inżynierii Eektrycznej na Politechnice Krakowskiej, pełniłem funkcję pełnomocnika Dziekana ds. Kół Naukowych na Wydziale Inżynierii Elektrycznej i Komputerowej. Pełnię funkcję opiekuna Koła Naukowego el-RAPPRO, aktywnie wspieram rozwój młodych talentów. Posiadam certyfikaty z AutoCAD (Basic i Advanced), Inventor (Basic i Advanced) oraz ukończone szkolenie &bdquo;Umiejętności Jutra AI&rdquo; organizowane przez Google i SGH. Moja działalność naukowa obejmuje współautorstwo licznych publikacji oraz trzy patenty, co świadczy o moim zaangażowaniu w tworzenie innowacyjnych rozwiązań technologicznych.</p>
-                </div>
-            </article>
-            <article class="person">
-                <div class="custom-photo photo-left"><img src="images/IMG_0636.JPG" alt="inż. Mateusz Pyznar"></div>
-                <div class="person-info">
-                    <h3 class="name">inż. Mateusz Pyznar</h3>
-                    <p class="person-description">W firmie New Prompt zajmuje się aspektami technicznymi oraz realizacją zamówień wydruków 3D. Wykorzystuje moje zainteresowania związane z elektroniką oraz prototypowaniem w technologiach przyrostowych aby dbać o ciągłą gotowość do pracy naszych urządzeń.  Podczas realizacji zamówień darze do uzyskania jak najlepszych parametrów wytrzymałościowych oraz jakościowych w zależności od potrzeb zamawiającego przy zachowaniu jak najkorzystniejszej ceny dla odbiorcy końcowego. </p>
-                </div>
-            </article>
-            <article class="person">
-                <div class="custom-photo photo-right"><img src="images/IMG_0640.JPG" alt="inż. Łukasz Bolanowski"></div>
-                <div class="person-info person-info-right">
-                    <h3 class="name">inż. Łukasz Bolanowski</h3>
-                    <p class="person-description">Jestem studentem I semestru studiów magisterskich kierunku Infotronika na Wydziale Inżynierii Elektrycznej i Komputerowej Politechniki Krakowskiej im. Tadeusza Kościuszki. Potrafię łączyć wywiązywanie się z obowiązków związanych ze studiami z innymi formami aktywności na uczelni - działam w Kole Naukowym oraz w Samorządzie Studenckim, przez co nauczyłem się efektywnie zarządzać swoim czasem. Lubię pracować w dobrze zorganizowanym zespole, gdzie każdy ma do zrealizowania dany zakres obowiązków. W firmie zajmuję się promocją oraz marketingiem, a także projektowaniem modeli do druku 3D. W wolnych chwilach zajmuję się zgłębianiem wiedzy związanej z zainteresowaniami.</p>
-                </div>
-            </article>
-            <article class="person">
-                <div class="custom-photo photo-left"><img src="images/IMG_0691.JPG" alt="inż. Kamila Stańczyk"></div>
-                <div class="person-info">
-                    <h3 class="name">inż. Kamila Stańczyk</h3>
-                    <p class="person-description">Swoje doświadczenie zdobyłam biorąc udział w różnych projektach związanych z drukiem 3D. Zawodowo zajmuje się projektowaniem symboli elektrycznych. Na codzień pełnię funkcję przewodniczącej Koła Naukowego el-RAPPRO przez co wiem jak skutecznie zajmować się zespołem. Jestem studentką studiów II stopnia na kierunku Infotronika. Swój wolny czas poświęcam tematom związanym z AI, psychologią a także ekonomią. W firmie zajmuję się kontaktem z klientami, a także dopasowaniem naszej oferty do ich potrzeb.</p>
-                </div>
-            </article>
-        </main>
-    </section>
-    <section class="contact" id="section-contact">
-        <h1 class="title">Skontaktuj się z nami</h1>
-        <div class="formsocials">
-            <form class="form-box" action="https://formsubmit.co/newprompt.official@gmail.com" enctype="multipart/form-data" method="POST">
-                <h3 class="form-info">Przesyłanie modeli do druku, wycena</h3>
-                <input name="_captcha" type="hidden"value="false">
-                <input type="hidden" name="_subject" value="Wycena wydruku">
-                <input name="firstName" type="name"placeholder="Twoje imię" required>
-                <input name="surname" type="text"placeholder="Twoje nazwisko" required>
-                <input name="email" type="email"placeholder="Twój adres E-mail" required>
-                <input name="attachment" type="file">
-                <textarea name="textContent" placeholder="Napisz wiadomość"></textarea>
-                <button class="submitform" type="submit">Wyślij</button>
-            </form>
-            <form class="form-box" action="https://formsubmit.co/newprompt.official@gmail.com" enctype="multipart/form-data" method="POST">
-                <h3 class="form-info">Konsultacje techniczne, doradztwo projektowe</h3>
-                <input name="_captcha" type="hidden"value="false">
-                <input type="hidden" name="_subject" value="Konsultacje techniczne">
-                <input name="firstName" type="name"placeholder="Twoje imię" required>
-                <input name="surname" type="text"placeholder="Twoje nazwisko" required>
-                <input name="email" type="email"placeholder="Twój adres E-mail" required>
-                <textarea name="textContent" placeholder="Napisz wiadomość"></textarea>
-                <button class="submitform" type="submit">Wyślij</button>
-            </form>
-        </div>
-        <article class="media">
-            <h2 class="socialmedia">Media społecznościowe</h2>
-            <div class="socials">
-                <div class="facebook">
-                    <a class="socialLink" href="https://www.facebook.com/profile.php?id=61572729161947" target="_blank"><img class="facebookimg" src="images/facebook.png" alt="Logo facebooka">
-                        <p class="page">Facebook</p></a>
-                </div>
-                <div class="instagram">
-                    <a class="socialLink" href="" target="_blank"><img class="instagramimg" src="images/instagram.png" alt="Logo Instagramu">
-                        <p class="page">Instagram</p></a>
-                </div>
-                <div class="linkedin">
-                    <a class="socialLink" href="https://www.linkedin.com/company/newprompt-sp-z-o-o/?viewAsMember=true https://www.linkedin.com/company/newprompt-sp-z-o-o/?viewAsMember=true" target="_blank"><img class="linkedinimg" src="images/linkedin.png" alt="Logo LinkedIn">
-                        <p class="page">LinkedIn</p></a>
-                </div>
+        <div class="services-bottom">
+            <div class="services-container">
+            <div class="image-container"><img src="images/itemImage.jpg" alt="itemImage"></div>
+            <h3>Web design</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quis debitis quam fugiat sapiente dolorum exercitationem veniam est. Voluptatem aspernatur, repellendus eveniet ipsam recusandae maiores.</p>
             </div>
-            <p class="email">Napisz do nas na newprompt.official@gmail.com</p>
-        </article>
+
+            <div class="services-container">
+            <div class="image-container"><img src="images/itemImage.jpg" alt="itemImage"></div>
+            <h3>Mobile apps development</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quis debitis quam fugiat sapiente dolorum exercita
+            tionem veniam est. Voluptatem aspernatur, repellendus eveniet ipsam recusandae maiores.</p>
+            </div>
+
+            <div class="services-container">
+            <div class=image-container><img src="images/itemImage.jpg" alt="itemImage"></div>
+            <h3>UX/UI design</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quis debitis quam fugiat sapiente dolorum exercitationem veniam est. Voluptatem aspernatur, repellendus eveniet ipsam recusandae maiores.</p>
+            </div>
+
+            <div class="services-container">
+            <div class='image-container'><img src="images/itemImage.jpg" alt="itemImage"></div>
+            <h3>JavaScript programming</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quis debitis quam fugiat sapiente dolorum exercitationem veniam est. Voluptatem aspernatur, repellendus eveniet ipsam recusandae maiores.</p>
+            </div>
     </section>
-    <footer>
-        <h2>Napisz do nas na newprompt.official@gmail.com</h2>
-        <p>&copy; NewPrompt - wszelkie prawa zastrzeżone</p>
-        <p>NewPrompt Sp. z o.o. Autor: Łukasz Bolanowski</p>
-    </footer>
+    <section class="projects" id="second">
+        <div class="projects-top">
+            <h2>Projects <span>which</span> I realised</h2>
+        </div>
+        <div class="projects-bottom">
+        <div class="projects-container">
+            <h3>Header 1</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus accusamus perferendis eius totam veritatis iste maxime, debitis tempore molestias omnis officia iure, quisquam itaque dolor maiores blanditiis, ab laborum harum?</p>
+        </div>
+        <div class="projects-container">
+            <h3>Header 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ea culpa excepturi mollitia expedita repudiandae dolorum quo ut eos voluptas corrupti itaque dignissimos assumenda cupiditate veniam, repellat dolorem minima exercitationem.</p>
+        </div>
+        <div class="projects-container">
+            <h3>Header 3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel quis saepe ea ut id accusamus, aliquam repellat velit perspiciatis, quasi cupiditate assumenda accusantium natus aliquid dolorum asperiores enim similique ad.</p>
+        </div>
+        <div class="projects-container">
+            <h3>Header 4</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint vel, impedit iste ducimus debitis fugiat nisi voluptates modi numquam dicta mollitia earum maxime aperiam facilis quas possimus eos sunt eligendi.</p>
+        </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
     <script src="hamburgerMenu.js"></script>
+    <script src="scrollTrigger.js"></script>
     <script src="menu.js"></script>
-    <script src="activeOption.js"></script>
 </body>
 </html>

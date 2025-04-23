@@ -1,12 +1,13 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const menu = document.querySelector('.desktop')
-    const menuOffset = menu.offsetTop
+const marker = document.querySelector('#marker');
+const item = document.querySelectorAll('nav a');
 
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > menuOffset) {
-            menu.classList.add('sticky')
-        } else {
-            menu.classList.remove('sticky')
-        }
+function indicator(e) {
+    marker.style.left = e.offsetLeft + 'px';
+    marker.style.width = e.offsetWidth + 'px';
+}
+
+item.forEach(link => {
+    link.addEventListener('click', (e) => {
+        indicator(e.target);
     })
 })
