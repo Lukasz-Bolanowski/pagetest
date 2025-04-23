@@ -1,11 +1,11 @@
 gsap.registerPlugin(ScrollTrigger);
 
-const sections = document.querySelectorAll('section');
+const animationItems = document.querySelectorAll('section');
 
-sections.forEach(section => {
-    gsap.fromTo(section.children, { y: '+=100', opacity: 0 }, 
-    { y: 0, opacity: 1, stagger: 0.3, duration: 1, ease: "easeInOut", scrollTrigger: {
-        trigger: section,
-        start: 'top 40%'
+animationItems.forEach(item => {
+    gsap.fromTo(item.children, { y: '+=100', opacity: 0 }, 
+    { y: 0, opacity: 1, stagger: 0.15, duration: 0.4, ease: "easeIn", scrollTrigger: {
+        trigger: item,
+        start: 'top 50%',
     }})
 });
